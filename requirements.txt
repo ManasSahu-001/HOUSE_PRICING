@@ -1,0 +1,6 @@
+panadas
+numpy
+seaborn
+matplotlib
+scikit-learn
+-e . ## automatically triggerr setup.py for installing the package
