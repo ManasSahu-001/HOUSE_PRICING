@@ -5,16 +5,20 @@ def read_requirements(file_path="requirements.txt"):
         requirements = [
             line.strip()
             for line in file
-            if line.strip() and not line.startswith("-")
+            if line.strip() and not line.startswith("#")
         ]
     return requirements
 
-
 setup(
-    name="house_pricing",
-    version="0.0.1",
+    name="heart-disease-prediction",
+    version="1.0.0",
     author="Manas Sahu",
     author_email="sahumanasssss@gmail.com",
-    packages=find_packages(),
+    description="Streamlit-based Heart Disease Prediction Machine Learning Application",
+    long_description="A machine learning web application to predict heart disease using patient health parameters. Built with Python, Scikit-learn, and Streamlit.",
+    long_description_content_type="text/plain",
+    packages=find_packages(exclude=("officialenv",)),
+    include_package_data=True,
     install_requires=read_requirements(),
+    python_requires=">=3.8",
 )

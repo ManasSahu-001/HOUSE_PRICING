@@ -1,4 +1,4 @@
-panadas
+pandas
 numpy
 seaborn
 matplotlib
